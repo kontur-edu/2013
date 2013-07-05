@@ -1,0 +1,30 @@
+Инструкция по установке git клиента и началу работы:
+ 
+0. Зайти на https://git.skbkontur.ru/, используя свои доменные имя и пароль, сообщить словами, что вы это сделали (чтобы вас добавили к членам команды)
+1. Установить Git клиент:
+1.1 Скачать клиент для Windows: http://git-scm.com/downloads
+1.2 В процессе уставноки сделать следущие настройки:
+  - Отжать галочку Windows explorer integration
+  - Выбрать пункт Run git from the windows command prompt
+  - Выбрать пункт Checkout as is, commit as is
+
+2. Установить
+3. Генерация ключа:
+  3.1. Открыть cmd (через Win+R) и выполнить "C:\Program Files (x86)\Git\bin\ssh-keygen.exe"
+  3.2. Будет предложено ввести имя файла и какие-то фразы. Не вводить никаких pass-фраз и использовать имя файла по умолчанию
+  3.3. Файлы id_rsa и id_rsa.pub (которые появились в текущем каталоге) сложить в C:\Users\%USERNAME%\.ssh (%USERNAME% - пользователь, под которым вы в текущий момент работаете). Каталог .ssh лучше создать командой "mkdir .ssh" в консоли или в фаре.
+  3.4. В каталоге .ssh создать файл config c таким содержимым:
+     Host git.skbkontur.ru
+     User git
+     IdentityFile ~/.ssh/id_rsa
+  3.5 Добавить ключ по адресу: https://git.skbkontur.ru/keys
+      Там надо нажать "Add new" и в большое текстовое поле ввести содержимое файла id_rsa.pub
+4. Запустить SourceTree  и при первом запуске в качестве имени ввести свой доменный логин и email
+5. Далее использовать настройки по умолчанию 
+6. Добавление ключа:
+  6.1 Tools|Create or import SSH Keys
+  6.2 Нажать Conversions|Import key и выбрать файла id_rsa
+  6.3 Нажать Save private key и сохранить его под именем id_rsa.ppk в томже каталога где и id_rsa
+  6.4 В Tools|Options в группе SSH Configuration указать путь до файла id_rsa.ppk (см. 3.)
+7. Далее Clone/New, Ввести Url git@git.skbkontur.ru:burmistrov/catalogue.git и выбрать каталог в котором будут лежать исходники
+8. Сделать checkout мастера
