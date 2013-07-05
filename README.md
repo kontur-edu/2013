@@ -1,5 +1,5 @@
-Летняя школа стажировки 2013.
+п»їР›РµС‚РЅСЏСЏ С€РєРѕР»Р° СЃС‚Р°Р¶РёСЂРѕРІРєРё 2013.
 ====
 
-(Программа Школы)[https://docs.google.com/spreadsheet/ccc?key=0AlW9g0IejZAVdF9DbW9rRnNhamtzMGFYa2hMZGdBNXc#gid=0]
+(РџСЂРѕРіСЂР°РјРјР° РЁРєРѕР»С‹)[https://docs.google.com/spreadsheet/ccc?key=0AlW9g0IejZAVdF9DbW9rRnNhamtzMGFYa2hMZGdBNXc#gid=0]
 
