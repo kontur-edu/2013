@@ -1,5 +1,4 @@
-﻿//#define HEAP_CLASS_TESTING
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -22,13 +21,16 @@ namespace TestingTask
 			this.score = score;
 		}
 
+        //find max/min
 		public T PeekBest()
 		{
 			return data[0];
 		}
 
+        //heap size
 		public int Count { get { return data.Count; } }
 
+        // return - delete best
 		public T ExtractBest()
 		{
 			T res = data[0];
@@ -49,8 +51,8 @@ namespace TestingTask
 		private void Up(int i)
 		{
 			if (i == 0) return;
-			var parent = i / 2;
-			if (score(data[parent]) < score(data[i]))
+            var parent = (i - 1) / 2;
+            if (score(data[parent]) < score(data[i]))
 			{
 				Swap(parent, i);
 				Up(parent);
@@ -60,13 +62,16 @@ namespace TestingTask
 		[Conditional("HEAP_CLASS_TESTING")]
 		private void CheckConsistency()
 		{
-			// Это метод проверки инварианта структуры данных "Куча". Его можно использовать для тестирования этого класса.
-			// Атрибут Conditional дает инструкцию компилятору игнорировать все вызовы этого метода, если только не определен символ HEAP_CLASS_TESTING.
-			// Определить символ можно с помощью инструкции #define HEAP_CLASS_TESTING (см начало этого файла)
+			// Это метод проверки инварианта структуры данных "Куча". Его можно использовать для 
+            // тестирования этого класса.
+			// Атрибут Conditional дает инструкцию компилятору игнорировать все вызовы этого метода,
+            // если только не определен символ HEAP_CLASS_TESTING.
+			// Определить символ можно с помощью инструкции #define HEAP_CLASS_TESTING
+            // (см начало этого файла)
 			for (int i = 0; i < data.Count; i++)
 			{
-				var c1 = i * 2;
-				var c2 = i * 2 + 1;
+                var c1 = i * 2 + 1;
+                var c2 = i * 2 + 2;
 				if (c1 < data.Count && score(data[i]) < score(data[c1]) ||
 				    c2 < data.Count && score(data[i]) < score(data[c2])
 					)
@@ -99,10 +104,11 @@ namespace TestingTask
 			data[i] = t;
 		}
 
+        //=?
 		private void Down(int i)
 		{
-			var c1 = i * 2;
-			var c2 = i * 2 + 1;
+            var c1 = i * 2 + 1;
+            var c2 = i * 2 + 2;
 			if (c1 >= data.Count) return; // уже на дне!
 			var c = (c2 < data.Count && score(data[c2]) > score(data[c1])) ? c2 : c1;
 			if (score(data[i]) < score(data[c]))
