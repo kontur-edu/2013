@@ -4,6 +4,8 @@
 
 [Программа Школы](https://docs.google.com/spreadsheet/ccc?key=0AlW9g0IejZAVdF9DbW9rRnNhamtzMGFYa2hMZGdBNXc#gid=0)
 
+[Семинар](https://docs.google.com/spreadsheet/ccc?key=0AlW9g0IejZAVdDk3YnpBeUlLOEFzdFpiR09kdW90ZEE#gid=0)
+
 Преподаватели
 ---
 
