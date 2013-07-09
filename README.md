@@ -21,3 +21,8 @@
 * Георгий Кошелев
 * Полина Зонова
 * Ибрагим Юлдашев
+
+Домашние задания
+---
+
+* [Функциональщина: Текстовый квест] (https://docs.google.com/document/d/1yMOfKAQZjpmwdVG2kxzRLkWTYcXGLEUv_r_297HBqkw/edit?usp=sharing)
