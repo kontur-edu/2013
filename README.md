@@ -14,6 +14,8 @@
 
 [Решение "Текстового квеста"](https://github.com/Lakret/manjong/blob/master/Quest/Quest/Program.fs)
 
+[Обратная связь](https://docs.google.com/forms/d/17vHYmVzH9545hkpB0-LnZ6PgLqxIGZM1-C1X2Hv5kOk/viewanalytics)
+
 Преподаватели
 ---
 
@@ -25,4 +27,3 @@
 * Юрий Плинер
 * Георгий Кошелев
 * Полина Зонова
-* Ибрагим Юлдашев
